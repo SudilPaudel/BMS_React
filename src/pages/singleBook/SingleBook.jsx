@@ -20,7 +20,7 @@ const SingleBook = () => {
   }, [])
 
   const handleDelete = async () => {
-    const response = await axios.delete(`http://localhost:3000/book/${id}`)
+    const response = await axios.delete(`https://bms-node.onrender.com/book/${id}`)
     if (response.status === 200) {
       alert("Book Deleted Successfully")
       navigate('/')

@@ -28,7 +28,7 @@ const handleSubmit = async (e) => {
   }
 
   try {
-    const response = await axios.patch(`http://localhost:3000/book/${id}`, formData, {
+    const response = await axios.patch(`https://bms-node.onrender.com/book/${id}`, formData, {
       headers: {
         "Content-Type": "multipart/form-data",
       },
@@ -45,7 +45,7 @@ const handleSubmit = async (e) => {
 };
 
 const fetchBook = async()=>{
-  const response =await axios.get(`http://localhost:3000/book/${id}`)
+  const response =await axios.get(`https://bms-node.onrender.com/book/${id}`)
   if(response.status === 200){
     console.log(response.data.data)
     setBookName(response.data.data.bookName)
