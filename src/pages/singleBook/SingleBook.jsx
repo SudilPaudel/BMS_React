@@ -81,8 +81,8 @@ const SingleBook = () => {
             </div>
           </div>
         </div>
-      </div>
       <Footer />
+      </div>
     </>
   )
 }
