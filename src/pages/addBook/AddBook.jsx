@@ -16,7 +16,7 @@ const AddBook = () => {
   
   const handleSubmit = async(e)=>{
     e.preventDefault()
-    const response =await axios.post("https://bms-node.onrender.com/book",{
+    const response =await axios.post("http://localhost:3000/book",{
       bookName: bookName,
       bookPrice: bookPrice,
       isbnNumber: isbnNumber,
